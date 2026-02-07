@@ -1,0 +1,381 @@
+:root {
+    --bg-color: #050505;
+    --text-color: #f0f0f0;
+    --accent-color: #ffd700;
+    /* Gold */
+    --secondary-accent: #00ffff;
+    /* Cyan */
+    --overlay-color: rgba(0, 0, 0, 0.75);
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Zen Kaku Gothic New', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Background Video */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    backdrop-filter: blur(3px);
+}
+
+/* Content Wrapper */
+/* Content Wrapper Style Removed */
+
+/* Header styles removed as requested */
+
+/* Sections General */
+section {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* Parallax Layer */
+.hero-parallax-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* Ensure it covers at least the viewport */
+    height: auto;
+    /* Allow it to grow based on image height */
+    z-index: 0;
+    overflow: visible;
+    /* Don't clip the image */
+    will-change: transform;
+    pointer-events: none;
+}
+
+.hero-background-image {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    min-height: 100vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+}
+
+/* Content Scroller */
+.content-scroller {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+/* Hero Content Section (Invisible container for layout) */
+.hero-content-section {
+    height: 80vh;
+    /* Match parallax layer height to push content down */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.hero-overlay {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.hero-logo {
+    max-width: 80%;
+    width: 350px;
+    /* 70% size requested */
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
+    margin-bottom: 10px;
+}
+
+/* Wrapper for main content sections */
+.features-section,
+.gameplay-section,
+.community-section,
+.site-footer {
+    position: relative;
+    z-index: 10;
+    /* Background color removed */
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    /* Centered with bottom margin */
+    padding: 20px;
+}
+
+/* Footer needs specific handling */
+.site-footer {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
+
+.hero-catchphrase {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5), transparent);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.hero-release-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.release-text {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.wishlist-text {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2;
+    background: linear-gradient(90deg, #fff, #bbb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Features Section Layout */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image-container {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.feature-item:hover .feature-img {
+    transform: scale(1.03);
+}
+
+.feature-text-container {
+    flex: 1;
+}
+
+.feature-heading {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--secondary-accent);
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+/* Upgrade & Reincarnation Sections */
+.sub-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reincarnation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Community Section */
+.social-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+.site-footer {
+    padding: 50px 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-logo {
+        width: 280px;
+    }
+
+    .hero-catchphrase {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    .release-text {
+        font-size: 1.2rem;
+    }
+
+    .wishlist-text {
+        font-size: 0.8rem;
+    }
+
+    .hero-section {
+        margin-bottom: 60px;
+    }
+
+    .feature-item,
+    .feature-item.reverse {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-text-container {
+        text-align: left;
+    }
+
+    .feature-heading {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+}
