@@ -65,7 +65,7 @@ body {
 
 /* Sections General */
 section {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
 }
 
@@ -159,7 +159,7 @@ section {
     /* Background color removed */
     max-width: 1200px;
     /* Reverted to 1200px */
-    margin: 0 auto 100px auto;
+    margin: 0 auto 200px auto;
     /* Centered with bottom margin */
     padding: 0 20px;
 }
@@ -255,19 +255,17 @@ section {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border removed */
 }
 
 .feature-img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.5s ease;
+    /* transition removed */
 }
 
-.feature-item:hover .feature-img {
-    transform: scale(1.03);
-}
+/* Hover effect removed */
 
 .feature-text-container {
     flex: 1;
@@ -299,6 +297,7 @@ section {
     margin-top: 20px;
     /* Changed from margin-bottom to margin-top */
     border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Border restored */
 }
 
 .reincarnation-content {
@@ -308,6 +307,10 @@ section {
     gap: 30px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.reincarnation-section .feature-image-container {
+    box-shadow: none;
 }
 
 /* Community Section */
