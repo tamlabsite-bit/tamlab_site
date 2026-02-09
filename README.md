@@ -1,2 +1,2 @@
-# LIMITLESS-SURVIVORS_site
-リミットレスサバイバーズのウェブサイト
+# tamlab_site
+タムラボのウェブサイト
