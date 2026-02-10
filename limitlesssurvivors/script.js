@@ -66,14 +66,14 @@ const translations = {
         "community.follow_x": "Follow on X"
     },
     en: {
-        "hero.catchphrase": "Into the infinite abyss, an endless challenge.",
+        "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
         "hero.release_text": "Coming May 2026 to Steam",
         "hero.wishlist_text": "Add to your Wishlist",
-        "intro.text": "The thrill of getting stronger with every challenge. The exhilaration of wiping out enemies filling the screen.<br>Incremental x Hack & Slash x Roguelite Action<br>『LIMITLESS SURVIVORS』 begins.",
+        "intro.text": "The rush of growing stronger with every run.<br>The thrill of wiping out screens full of enemies.<br>Incremental × Hack & Slash × Roguelite Action<br>LIMITLESS SURVIVORS — Out Now.",
         "feature.growth.title": "Start Weak, Grow Infinite",
-        "feature.growth.desc": "Your first survival might only last 20 seconds.<br>But with steady upgrades, you'll soon experience the thrill of 'Musou' against enemies you couldn't scratch before!",
-        "feature.strategy.title": "Strategy via 'Weapon x Skill'",
-        "feature.strategy.desc": "Your weapon determines your skills.<br>How you combine the max 5 skills you gain on level up is up to you. Build your own ultimate survivor!",
+        "feature.growth.desc": "Your first run might end in just 20 seconds.<br>But with steady upgrades, you'll soon experience the thrill of mowing down enemies that once seemed invincible!",
+        "feature.strategy.title": "Strategy Built Through 'Weapon × Skill'",
+        "feature.strategy.desc": "Your weapon dictates your skills.<br>With up to 5 skill slots to fill as you level up, the combinations are endless.<br>Craft your ultimate build and dominate!",
         "feature.drop.title": "Twist Fate with 'Drop Items'",
         "feature.drop.desc": "A single item can change the tide.<br>Treasure chests overflow with effects like Attack Speed, Pierce, and Area Expansion.<br>With 'Random Options', no two items are alike.<br>When you find the ultimate item, your attack transforms into a weapon of mass destruction...",
         "upgrade.title": "Permanent Upgrades",
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang][key]) {
-                element.innerHTML = translations[lang][key]; 
+                element.innerHTML = translations[lang][key];
             }
         });
     }
