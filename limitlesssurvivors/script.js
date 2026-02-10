@@ -68,7 +68,7 @@ const translations = {
         "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
         "hero.release_text": "Coming May 2026 to Steam",
         "hero.wishlist_text": "Add to your Wishlist",
-        "intro.text": "The rush of growing stronger with every run.<br>The thrill of wiping out screens full of enemies.<br>Incremental × Hack & Slash × Roguelite Action<br>LIMITLESS SURVIVORS — Out Now.",
+        "intro.text": "The rush of growing stronger with every run.<br>The thrill of wiping out screens full of enemies.<br>Incremental × Hack & Slash × Roguelite Action<br>LIMITLESS SURVIVORS — Coming Soon.",
         "feature.growth.title": "Start Weak, Grow Infinite",
         "feature.growth.desc": "Your first run might end in just 20 seconds.<br>But with steady upgrades, you'll soon experience the thrill of mowing down enemies that once seemed invincible!",
         "feature.strategy.title": "Strategy Built Through 'Weapon × Skill'",
