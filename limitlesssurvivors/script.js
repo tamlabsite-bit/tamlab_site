@@ -60,9 +60,11 @@ const translations = {
         "upgrade.artifact.desc": "持ち帰ったアーティファクトがキャラクターを強化する。<br>集めれば集めるほど無限に強くなる！？",
         "reincarnation.title": "転生",
         "reincarnation.desc": "準備が整ったら、いざ「転生」へ！<br>一部の成果を引き継いで新しく始めることで、成長スピードはこれまで以上にスピーディーに。",
-        "community.title": "コミュニティ",
+        "community.title": "コミュニティ & リンク",
         "community.desc": "最新情報は公式Xアカウントでチェック",
-        "community.follow_x": "Follow on X"
+        "community.follow_x": "Follow on X",
+        "link.steam": "Steamストアページ",
+        "link.presskit": "プレスキット"
     },
     en: {
         "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
@@ -83,9 +85,11 @@ const translations = {
         "upgrade.artifact.desc": "Strengthen your character with artifacts brought back from the abyss.<br>Collect them all to unlock limitless power!",
         "reincarnation.title": "Prestige",
         "reincarnation.desc": "Ready to surpass your limits? Perform a 'Prestige' to reset your run! By carrying over key progress, your growth will accelerate faster than ever before.",
-        "community.title": "Community",
+        "community.title": "Community & Links",
         "community.desc": "Check the latest info on our official X account",
-        "community.follow_x": "Follow on X"
+        "community.follow_x": "Follow on X",
+        "link.steam": "Steam Store Page",
+        "link.presskit": "Press Kit"
     }
 };
 
