@@ -114,4 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Update logo based on language
+    const logoImg = document.querySelector('.hero-logo');
+    if (logoImg) {
+        const cacheBust = "?v=20260309162038";
+        if (lang === 'en') {
+            logoImg.src = "assets/images/logoEN.png" + cacheBust;
+        } else {
+            logoImg.src = "assets/images/logo.png" + cacheBust;
+        }
+    }
 });
