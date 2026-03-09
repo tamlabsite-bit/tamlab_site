@@ -117,12 +117,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update logo based on language
     const logoImg = document.querySelector('.hero-logo');
-    if (logoImg) {
-        const cacheBust = "?v=20260309162038";
+    const logoSource = document.querySelector('.hero-overlay picture source');
+    if (logoImg && logoSource) {
+        const cacheBust = "?v=20260309162428";
         if (lang === 'en') {
             logoImg.src = "assets/images/logoEN.png" + cacheBust;
+            logoSource.srcset = "assets/images/logoEN.webp" + cacheBust;
         } else {
             logoImg.src = "assets/images/logo.png" + cacheBust;
+            logoSource.srcset = "assets/images/logo.webp" + cacheBust;
         }
     }
 });
