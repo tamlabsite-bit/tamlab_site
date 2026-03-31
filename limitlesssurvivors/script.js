@@ -45,21 +45,7 @@ const translations = {
         "hero.catchphrase": "無限の深淵へ、終わりなき挑戦を。",
         "hero.release_text": "2026年5月 Steam&reg;にて配信予定",
         "hero.wishlist_text": "Coming May 2026 to Steam",
-        "intro.text": "挑むたびに強くなる快感。画面を埋め尽くす敵を一掃する爽快感。<br>インクリメンタル×トレハン×ローグライトアクション<br>『リミットレスサバイバーズ』、始動。",
-        "feature.growth.title": "最弱から始まる、圧倒的成長体験",
-        "feature.growth.desc": "初回プレイの生存時間はわずか10秒。<br>コツコツと積み上げた強さで、かつて手も足も出なかった強敵を相手に「無双」の快感を味わおう！",
-        "feature.strategy.title": "戦略を構築する「武器×スキル」",
-        "feature.strategy.desc": "手にする武器でスキルが決まる。<br>レベルアップで獲得する最大5つのスキルをどう組み合わせるかはあなた次第。自分だけの最強ビルドを作り上げよう！",
-        "feature.drop.title": "運命を狂わせる「ドロップアイテム」",
-        "feature.drop.desc": "たった1つで戦況が一変？<br>宝箱から溢れ出すのは、攻撃速度、貫通、範囲拡大などの強力な効果。<br>さらに「ランダムオプション」により、同じアイテムでも性能は千差万別。<br>究極のアイテムを引き当てた時、あなたの攻撃は「兵器」へと変貌する...",
-        "upgrade.title": "永続強化",
-        "upgrade.subtitle": "永続強化で限界を突破せよ",
-        "upgrade.status.title": "ステータス強化",
-        "upgrade.status.desc": "集めた素材でステータスを底上げ。<br>一歩ずつ、もっと遠くへ。",
-        "upgrade.artifact.title": "アーティファクト",
-        "upgrade.artifact.desc": "持ち帰ったアーティファクトがキャラクターを強化する。<br>集めれば集めるほど無限に強くなる！？",
-        "reincarnation.title": "転生",
-        "reincarnation.desc": "準備が整ったら、いざ「転生」へ！<br>一部の成果を引き継いで新しく始めることで、成長スピードはこれまで以上にスピーディーに。",
+        "intro.text": "トレハン×インクリメンタル×無限育成<br>アーティファクトを収集し、クリスタルを集めステータスを強化<br>オートプレイで放置ファーミング",
         "community.title": "コミュニティ & リンク",
         "community.desc": "最新情報は公式Xアカウントでチェック",
         "community.follow_x": "Follow on X",
@@ -70,21 +56,7 @@ const translations = {
         "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
         "hero.release_text": "Coming May 2026 to Steam",
         "hero.wishlist_text": "Add to your Wishlist",
-        "intro.text": "The rush of growing stronger with every run.<br>The thrill of wiping out screens full of enemies.<br>Incremental × Hack & Slash × Roguelite Action<br>LIMITLESS SURVIVORS — Coming Soon.",
-        "feature.growth.title": "Start Weak, Grow Infinite",
-        "feature.growth.desc": "Your first run might end in just 10 seconds.<br>But with steady upgrades, you'll soon experience the thrill of mowing down enemies that once seemed invincible!",
-        "feature.strategy.title": "Strategy Built Through 'Weapon × Skill'",
-        "feature.strategy.desc": "Your weapon dictates your skills.<br>With up to 5 skill slots to fill as you level up, the combinations are endless.<br>Craft your ultimate build and dominate!",
-        "feature.drop.title": "Twist Fate with 'Drop Items'",
-        "feature.drop.desc": "A single drop can turn the tide of battle.<br>Treasure chests overflow with powerful effects like Attack Speed, Pierce, and Area Size.<br>Thanks to randomized modifiers, no two items are ever the same.<br>When you land that ultimate drop, your attack transforms into a weapon of mass destruction.",
-        "upgrade.title": "Meta-Progression",
-        "upgrade.subtitle": "Break through your limits with permanent upgrades.",
-        "upgrade.status.title": "Stat Growth",
-        "upgrade.status.desc": "Boost your base stats with collected materials.<br>With every upgrade, push further than ever before.",
-        "upgrade.artifact.title": "Artifacts",
-        "upgrade.artifact.desc": "Strengthen your character with artifacts brought back from the abyss.<br>Collect them all to unlock limitless power!",
-        "reincarnation.title": "Prestige",
-        "reincarnation.desc": "Ready to surpass your limits? Perform a 'Prestige' to reset your run! By carrying over key progress, your growth will accelerate faster than ever before.",
+        "intro.text": "Loot-driven incremental roguelite with infinite progression.<br>Collect powerful artifacts, gather crystals, and scale your stats to absurd levels.<br>Auto-play cleared dungeons and farm while AFK.",
         "community.title": "Community & Links",
         "community.desc": "Check the latest info on our official X account",
         "community.follow_x": "Follow on X",
@@ -113,6 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.innerHTML = translations[lang][key];
             }
         });
+    }
+
+    // Update trailer video based on language
+    const trailerVideo = document.getElementById('trailer-video');
+    if (trailerVideo) {
+        if (lang === 'en') {
+            trailerVideo.src = "https://www.youtube.com/embed/mtoJjaZSt-Q";
+        } else {
+            trailerVideo.src = "https://www.youtube.com/embed/9ZPjNiJOgEM";
+        }
     }
 
     // Update logo based on language
