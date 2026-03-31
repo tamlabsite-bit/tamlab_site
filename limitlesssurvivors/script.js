@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const trailerVideo = document.getElementById('trailer-video');
     if (trailerVideo) {
         if (lang === 'en') {
-            trailerVideo.src = "https://www.youtube.com/embed/mtoJjaZSt-Q";
+            trailerVideo.src = "https://www.youtube.com/embed/mtoJjaZSt-Q?vq=hd720";
         } else {
-            trailerVideo.src = "https://www.youtube.com/embed/9ZPjNiJOgEM";
+            trailerVideo.src = "https://www.youtube.com/embed/9ZPjNiJOgEM?vq=hd720";
         }
     }
 
