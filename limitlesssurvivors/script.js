@@ -97,6 +97,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Update presskit links based on language
+    const presskitLinks = document.querySelectorAll('a[data-i18n="link.presskit"]');
+    presskitLinks.forEach(link => {
+        if (lang === 'en') {
+            link.href = "https://drive.google.com/drive/folders/1BHYzKyjWQzsKMXm4Fn6w1DevtAXKxYnK";
+        } else {
+            link.href = "https://drive.google.com/drive/folders/16hJ9fYhAnBGNF0Wh6XOxyskNgO3fF1VT";
+        }
+    });
+
     // Update logo based on language
     const logoImg = document.querySelector('.hero-logo');
     const logoSource = document.querySelector('.hero-overlay picture source');
