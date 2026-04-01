@@ -89,7 +89,8 @@
         productVersion: "0.9",
       }, (progress) => {
         console.log("Unity Loading Progress: " + progress);
-        document.querySelector("#loader-bar-fill").style.width = 100 * progress + "%";
+        const displayProgress = Math.min(progress / 0.95, 1);
+        document.querySelector("#loader-bar-fill").style.width = 100 * displayProgress + "%";
       }).then((unityInstance) => {
         document.querySelector("#custom-loader").style.display = "none";
       }).catch((message) => {
