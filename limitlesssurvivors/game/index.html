@@ -77,6 +77,7 @@
 
       }
 
+      console.log("Unity Instance Creation Started...");
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
         dataUrl: "Build/test_WEBRUN.data",
@@ -86,12 +87,9 @@
         companyName: "Tam Lab",
         productName: "Limitless Survivors",
         productVersion: "0.9",
-        onProgress: (progress) => {
-          console.log("Unity Loading Progress: " + progress); // ブラウザのコンソールに進捗状況を出力します
-          document.querySelector("#loader-bar-fill").style.width = 100 * progress + "%";
-        },
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      }, (progress) => {
+        console.log("Unity Loading Progress: " + progress);
+        document.querySelector("#loader-bar-fill").style.width = 100 * progress + "%";
       }).then((unityInstance) => {
         document.querySelector("#custom-loader").style.display = "none";
       }).catch((message) => {
