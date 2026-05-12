@@ -44,7 +44,7 @@ const translations = {
     ja: {
         "hero.catchphrase": "無限の深淵へ、終わりなき挑戦を。",
         "hero.release_text": "2026年7月 Steam&reg;にて配信予定",
-        "hero.wishlist_text": "Coming May 2026 to Steam",
+        "hero.wishlist_text": "Coming July 2026 to Steam",
         "intro.text": "インクリメンタル×無限育成<br>アーティファクトを収集し、クリスタルを集めステータスを強化<br>オートプレイで放置ファーミング",
         "community.title": "コミュニティ & リンク",
         "community.desc": "最新情報は公式Xアカウントでチェック",
@@ -54,7 +54,7 @@ const translations = {
     },
     en: {
         "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
-        "hero.release_text": "Coming May 2026 to Steam",
+        "hero.release_text": "Coming July 2026 to Steam",
         "hero.wishlist_text": "Add to your Wishlist",
         "intro.text": "Incremental roguelite with infinite progression.<br>Collect powerful artifacts, gather crystals, and scale your stats to absurd levels.<br>Auto-play cleared dungeons and farm while AFK.",
         "community.title": "Community & Links",
@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const presskitLinks = document.querySelectorAll('a[data-i18n="link.presskit"]');
     presskitLinks.forEach(link => {
         if (lang === 'en') {
-            link.href = "https://drive.google.com/drive/folders/1BHYzKyjWQzsKMXm4Fn6w1DevtAXKxYnK";
+            link.href = "https://drive.google.com/drive/folders/1-cc1j_zws2EV2nMz511JcHM3v0jtJ3Lk";
         } else {
-            link.href = "https://drive.google.com/drive/folders/16hJ9fYhAnBGNF0Wh6XOxyskNgO3fF1VT";
+            link.href = "https://drive.google.com/drive/folders/1QnVUIc1fDtsMnhzFZmHDK6cwAhTmsdWG";
         }
     });
 
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoImg = document.querySelector('.hero-logo');
     const logoSource = document.querySelector('.hero-overlay picture source');
     if (logoImg && logoSource) {
-        const cacheBust = "?v=20260309162428";
+        const cacheBust = "?v=20260512162428";
         if (lang === 'en') {
             logoImg.src = "assets/images/logoEN.png" + cacheBust;
             logoSource.srcset = "assets/images/logoEN.webp" + cacheBust;
