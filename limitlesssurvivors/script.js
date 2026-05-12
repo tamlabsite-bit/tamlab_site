@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const translations = {
     ja: {
         "hero.catchphrase": "無限の深淵へ、終わりなき挑戦を。",
-        "hero.release_text": "2026年5月 Steam&reg;にて配信予定",
+        "hero.release_text": "2026年7月 Steam&reg;にて配信予定",
         "hero.wishlist_text": "Coming May 2026 to Steam",
-        "intro.text": "トレハン×インクリメンタル×無限育成<br>アーティファクトを収集し、クリスタルを集めステータスを強化<br>オートプレイで放置ファーミング",
+        "intro.text": "インクリメンタル×無限育成<br>アーティファクトを収集し、クリスタルを集めステータスを強化<br>オートプレイで放置ファーミング",
         "community.title": "コミュニティ & リンク",
         "community.desc": "最新情報は公式Xアカウントでチェック",
         "community.follow_x": "Follow on X",
@@ -56,7 +56,7 @@ const translations = {
         "hero.catchphrase": "Descend into the Abyss. Face the Endless Challenge.",
         "hero.release_text": "Coming May 2026 to Steam",
         "hero.wishlist_text": "Add to your Wishlist",
-        "intro.text": "Loot-driven incremental roguelite with infinite progression.<br>Collect powerful artifacts, gather crystals, and scale your stats to absurd levels.<br>Auto-play cleared dungeons and farm while AFK.",
+        "intro.text": "Incremental roguelite with infinite progression.<br>Collect powerful artifacts, gather crystals, and scale your stats to absurd levels.<br>Auto-play cleared dungeons and farm while AFK.",
         "community.title": "Community & Links",
         "community.desc": "Check the latest info on our official X account",
         "community.follow_x": "Follow on X",
